@@ -7,6 +7,7 @@ public class Task1 {
         double weight = 60.5;
 
         System.out.println("Name=" + name + ", age=" + age + ", weight=" + weight);
+
     }
 }
 
