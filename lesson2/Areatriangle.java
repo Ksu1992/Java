@@ -1,4 +1,4 @@
-package lesson1;
+package lesson2;
 
 public class Areatriangle {
     public static void main(String[] args) {
@@ -15,5 +15,11 @@ public class Areatriangle {
 
         // Виведення результату в консоль
         System.out.println("Площа трикутника: " + area);
+
+        if (area %2==0) {
+            System.out.println(area + "є парним числом.");
+        } else {
+            System.out.println(area + "є не парним числом.");
+        }
     }
 }
