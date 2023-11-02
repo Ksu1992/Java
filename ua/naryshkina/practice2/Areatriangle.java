@@ -1,4 +1,4 @@
-package lesson2;
+package ua.naryshkina.practice2;
 
 public class Areatriangle {
     public static void main(String[] args) {

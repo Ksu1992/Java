@@ -1,4 +1,4 @@
-package lesson1;
+package ua.naryshkina.practice1;
 
 public class Task2 {
     public static void main(String[] args) {
