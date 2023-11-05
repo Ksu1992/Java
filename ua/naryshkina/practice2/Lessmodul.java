@@ -1,6 +1,6 @@
 package ua.naryshkina.practice2;
 
-public class lessmodul {
+public class Lessmodul {
     public static void main(String[] args) {
         double number1 = -5;
         double number2 = 7;
