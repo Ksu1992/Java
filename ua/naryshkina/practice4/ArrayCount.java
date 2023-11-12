@@ -2,6 +2,9 @@ package ua.naryshkina.practice4;
 
 import java.util.Arrays;
 import java.util.Random;
+//Заполнить одномерный массив случайными целочисленными значениями.
+//• Проверить сколько простых чисел присутствует в массиве. Размер массива 1000 элементов.
+// Вынесем подсчет кол-ва простых чисел в отдельный метод
 
 public class ArrayCount {
     public static void main(String[] args) {
@@ -11,12 +14,18 @@ public class ArrayCount {
             array[i] = random.nextInt(400);
         }
 
-            System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(array));
 
+// Вызов метода для подсчета простых чисел
+        countPrimes(array);
+    }
+
+    // Метод для подсчета простых чисел в массиве
+    public static void countPrimes(int[] array) {
         int primeCount = 0; // Счетчик простых чисел
 
         for (int i = 0; i < array.length; i++) {
-            // Проверка текущего элемента,является ли оно простым
+            // Проверка текущего элемента, является ли оно простым
             if (isPrime(array[i])) {
                 primeCount++;
             }
@@ -38,8 +47,6 @@ public class ArrayCount {
         return true;
     }
 }
-
-    
 
 
 
