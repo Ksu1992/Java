@@ -5,12 +5,12 @@ package ua.naryshkina.practice5;
 public class Task2 {
     public static void main(String[] args) {
         int[]array={5,4,3,2,1};
-        System.out.println(Sorted(array));
+        System.out.println(sorted(array));
 
 
     }
 
-    public static boolean Sorted (int[]array) {
+    public static boolean sorted (int[]array) {
         for (int i = 0; i < array.length - 1; i++) {
             if (array[i] < array[i+1]) {
                 return false;
