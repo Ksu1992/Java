@@ -15,30 +15,30 @@ public class ArrayParity {
         }
 
         System.out.println(Arrays.toString(array));
-        replace(array);
+
+        // Вызов метода replace
+        int[] modifiedArray = replace(array);
+
+        // Выводим обновленный массив
+        System.out.println("Измененный массив: " + Arrays.toString(modifiedArray));
     }
 
-    public static void replace(int array[]) {
+    public static int[] replace(int array[]) {
+        // Создаем копию массива
+        int[] copyArray = Arrays.copyOf(array, array.length);
+
         int evenCount = 0; // Счетчик четных чисел
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
+        for (int i = 0; i < copyArray.length; i++) {
+            if (copyArray[i] % 2 == 0) {
                 evenCount++;
+                copyArray[i] = 0; // Замена четных чисел на 0
             }
         }
 
         System.out.println("Количество четных чисел в массиве: " + evenCount);
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
-                array[i] = 0;
-            }
-        }
-
-        // Выводим обновленный массив
-        for (int number : array) {
-            System.out.print(number + " ");
-        }
+        return copyArray; // Возвращаем измененную копию массива
     }
 }
 

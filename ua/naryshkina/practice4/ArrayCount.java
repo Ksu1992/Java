@@ -16,12 +16,13 @@ public class ArrayCount {
 
         System.out.println(Arrays.toString(array));
 
-// Вызов метода для подсчета простых чисел
-        countPrimes(array);
+        // Вызов метода для подсчета простых чисел
+        int primeCount = countPrimes(array);
+        System.out.println("Количество простых чисел в массиве: " + primeCount);
     }
 
     // Метод для подсчета простых чисел в массиве
-    public static void countPrimes(int[] array) {
+    public static int countPrimes(int[] array) {
         int primeCount = 0; // Счетчик простых чисел
 
         for (int i = 0; i < array.length; i++) {
@@ -31,7 +32,7 @@ public class ArrayCount {
             }
         }
 
-        System.out.println("Количество простых чисел в массиве: " + primeCount);
+        return primeCount;
     }
 
     // Метод для проверки, является ли число простым
@@ -47,10 +48,6 @@ public class ArrayCount {
         return true;
     }
 }
-
-
-
-
 
 
 
