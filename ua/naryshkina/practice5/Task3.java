@@ -6,16 +6,16 @@ package ua.naryshkina.practice5;
 //ну и методы нужно именовать с маленькой буквы
 public class Task3 {
     public static void main(String[] args) {
-        int[][] OriginalArray = {
+        int[][] originalArray = {
                 {1, 2},
                 {3, 4}
         };
-        int[][] CloneArray = copy(OriginalArray);
+        int[][] cloneArray = copy(originalArray);
         System.out.println("Оригинальный массив");
-        output(OriginalArray);
+        output(originalArray);
         System.out.println("Измененный массив");
-        reverse(CloneArray);
-        output(CloneArray);
+        int [][] reverseMatrix = reverseMatrix(cloneArray);
+        output(reverseMatrix);
     }
 
     public static int[][] copy(int[][] src) {
@@ -33,9 +33,13 @@ public class Task3 {
             System.out.println();
         }
     }
-    public static void reverse(int[][] array) {
-        int temp = array[0][1];
-        array[0][1] = array[1][0];
-        array[1][0] = temp;
+    public static int[][] reverseMatrix(int[][] array) {
+        int[][] reverse = new int[array.length][array[0].length];
+        for (int i = 0; i < array.length ; i++) {
+            for (int j = 0; j < array[0].length ; j++) {
+                reverse[j][i] = array[i][j];
+            }
+        }
+        return reverse;
     }
 };
