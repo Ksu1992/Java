@@ -49,21 +49,22 @@ public class Phone {
     public static void main(String[] args) {
         Phone samsung = new Phone(7668976,"samsung",55);
         Phone huawei = new Phone(7556776,"huawei");
-        Phone notName = new Phone();
-System.out.println("Phone 1:number: "+samsung.number+";model: "+ samsung.model+";weight: "+samsung.weight);
-System.out.println("Phone 2: number:"+ huawei.number+";model:"+ huawei.model);
-System.out.println("Phone3");
+        Phone motorola = new Phone();
+// Выводим значения полей на консоль
+        System.out.println("Phone 1: Number - " + samsung.number + ", Model - " + samsung.model + ", Weight - " + samsung.weight);
+        System.out.println("Phone 2: Number - " + huawei.number + ", Model - " + huawei.model + ", Weight - " + huawei.weight);
+        System.out.println("Phone 3: Number - " + motorola.number + ", Model - " + motorola.model + ", Weight - " + motorola.weight);
 
+        // Вызываем методы для каждого объекта
+        samsung.receiveCall("John");
+        System.out.println("Phone 1 Number: " + samsung.getNumber());
 
-samsung.receiveCall("Maria");
-System.out.println("Phone samsung number: " + samsung.getNumber());
- huawei.receiveCall("Sui");
- System.out.println("Phone huawei number:"+ huawei.getNumber());
- //notName.receiveCall("Pawel");
-//System.out.println(Phone3 number);
+        huawei.receiveCall("Alice");
+        System.out.println("Phone 2 Number: " + huawei.getNumber());
 
-
-
+        motorola.receiveCall("Bob");
+        System.out.println("Phone 3 Number: " + motorola.getNumber());
     }
-
 }
+
+
