@@ -30,11 +30,14 @@ public class Phone {
     public Phone(int number, String model) {
         this.number = number;
         this.model = model;
+        this.weight = 50;
     }
     // конструктор без параметров
 
     public Phone(){
-
+        this.number = 7775588;
+        this.model = "Motorola";
+        this.weight = 45;
     }
     //метод receiveCall
     public static void receiveCall(String callerName) {
