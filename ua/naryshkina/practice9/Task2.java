@@ -6,7 +6,7 @@ package ua.naryshkina.practice9;
 //другое исключение
 //Проверьте ваш код в main( ).
 
-public class NewExceptions {
+public class Task2 {
     public static void main(String[] args) {
         try {
             f();

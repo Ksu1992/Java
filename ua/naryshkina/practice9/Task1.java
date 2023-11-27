@@ -8,7 +8,7 @@ package ua.naryshkina.practice9;
 //Добавьте блок finally и напечатайте сообщение, чтобы убедится, что вы
 //были там.
 
-public class Exceptions {
+public class Task1 {
     public static void main(String[] args) {
         try {
            realException();
