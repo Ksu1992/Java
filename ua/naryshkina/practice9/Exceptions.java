@@ -11,7 +11,7 @@ package ua.naryshkina.practice9;
 public class Exceptions {
     public static void main(String[] args) {
         try {
-           RealException();
+           realException();
         } catch (Exception e) {
             System.out.println("Caught exceptions: " + e.getMessage());
         } finally {
@@ -19,7 +19,7 @@ public class Exceptions {
         }
     }
 
-    public static void RealException() throws Exception {
+    public static void realException() throws Exception {
         // Бросаем объект Exception с аргументом String
         throw new Exception("Hello World");
     }
